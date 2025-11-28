@@ -1,0 +1,127 @@
+/*.heading{
+    color:blue;
+    font-size: 24px;
+    
+    
+    
+}
+body{
+    background-color: black;
+    color:white;
+}
+#box{
+    width: 100px;
+    height : 250px;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+div{
+    width: 100px;
+    background-color: red;
+    color: white;
+    height: 300px;
+    border: 3px solid blue;
+}
+.dark{
+    background-color: black;
+    color:aliceblue;
+}
+.light{
+    background-color: white;
+    color:black;
+}*/
+/* ---------------------- GLOBAL RESET ---------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #446d6f, #2f4f4f);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* ---------------------- GAME CONTAINER ---------------------- */
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+/* ---------------------- BOX (CELLS) ---------------------- */
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    background-color: #fffbe6;
+    font-size: 8vmin;
+    color: #df4839;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+/* ---------------------- BUTTONS ---------------------- */
+button {
+    padding: 0.8rem 1.8rem;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.75rem;
+    background-color: #222;
+    color: #fff;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #444;
+    transform: translateY(-3px);
+}
+
+#new-btn, #reset {
+    margin-top: 1rem;
+}
+
+/* ---------------------- MESSAGE ---------------------- */
+#msg {
+    font-size: 5vmin;
+    color: #fffbe6;
+    text-shadow: 0 0 10px rgba(255,255,255,0.7);
+}
+
+/* ---------------------- MESSAGE SCREEN ---------------------- */
+.msg-container {
+    height: 80vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* ---------------------- VISIBILITY ---------------------- */
+.hide {
+    display: none;
+}
